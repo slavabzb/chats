@@ -20,7 +20,7 @@ setup(
     packages=find_packages('src'),
     package_dir={'': 'src'},
     extras_require={
-        'test': [
+        'tests': [
             'tox>=2.9.1',
             'pytest>=3.4.0',
             'pytest-asyncio>=0.8.0',
