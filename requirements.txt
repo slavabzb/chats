@@ -1,3 +1,0 @@
-aiohttp==2.3.10
-cassandra-driver==3.13.0
-click==6.7
