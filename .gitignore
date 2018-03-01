@@ -1,3 +1,7 @@
+# vagrant
+.vagrant/
+*.retry
+
 # pytest
 .pytest_cache/
 

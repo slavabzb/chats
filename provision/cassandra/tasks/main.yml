@@ -1,0 +1,21 @@
+- name: Add repository
+  apt_repository:
+    repo: deb http://www.apache.org/dist/cassandra/debian 311x main
+    state: present
+
+- name: Add repository keys
+  apt_key:
+    keyserver: pool.sks-keyservers.net
+    id: A278B781FE4B2BDA
+
+- name: Install
+  apt:
+    name: cassandra
+    state: present
+    update_cache: yes
+    cache_valid_time: 84000
+
+- name: Start service
+  service:
+    name: cassandra
+    state: started
