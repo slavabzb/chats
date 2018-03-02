@@ -15,6 +15,7 @@ click = "*"
 [dev-packages]
 
 pytest = "*"
+pytest-aiohttp = "*"
 
 
 [requires]
